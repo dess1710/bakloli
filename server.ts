@@ -72,7 +72,7 @@ async function sendOtpEmail(targetEmail: string, otpCode: string): Promise<boole
 
   try {
     if (smtpUser && smtpPass) {
-      const transporterConfig: nodemailer.TransportOptions | any = smtpHost
+      const transporterConfig: any = smtpHost
         ? {
             host: smtpHost,
             port: smtpPort,
@@ -266,6 +266,9 @@ async function startServer() {
       });
     }
   });
+
+  // Serve public directory statically
+  app.use(express.static(path.resolve(__dirname, 'public')));
 
   // Dev vs Prod Vite Mounting
   if (process.env.NODE_ENV !== 'production') {

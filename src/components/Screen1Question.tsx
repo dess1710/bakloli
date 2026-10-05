@@ -36,7 +36,7 @@ export const Screen1Question: React.FC<Screen1QuestionProps> = ({ onSuccess }) =
       if (response.ok && data.success) {
         onSuccess();
       } else {
-        setErrorMessage(data.message || 'Incorrect answer. Try again, my love!');
+        setErrorMessage(data.message || 'Incorrect answer. Try again, Baby!');
       }
     } catch (err) {
       console.error('Network error verifying question:', err);
@@ -85,7 +85,7 @@ export const Screen1Question: React.FC<Screen1QuestionProps> = ({ onSuccess }) =
         <div className="bg-pink-50/80 border border-pink-200/60 rounded-2xl p-4 mb-6 shadow-inner">
           <div className="text-xs font-semibold text-pink-500 uppercase tracking-wider mb-1">Security Question</div>
           <div className="text-lg font-bold text-neutral-800 font-serif-romantic">
-            Question: what is my hobby?
+            Question: To see this , Enter your Nickname ?
           </div>
         </div>
 
@@ -159,7 +159,7 @@ export const Screen1Question: React.FC<Screen1QuestionProps> = ({ onSuccess }) =
               animate={{ opacity: 1, height: 'auto' }}
               className="mt-2.5 p-3 bg-pink-50/70 border border-pink-200/50 rounded-xl text-xs text-neutral-600 italic"
             >
-              💡 Think of a timeless 64-square battlefield with knights, rooks, queens, and a king in check!
+              💡 I'm so rude. I won't give hints.
             </motion.div>
           )}
         </div>

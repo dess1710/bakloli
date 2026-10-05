@@ -88,7 +88,7 @@ export const Screen2Otp: React.FC<Screen2OtpProps> = ({ onSuccess, onBack }) => 
       if (response.ok && data.success) {
         onSuccess();
       } else {
-        setErrorMessage(data.message || 'Invalid OTP code. Please try again.');
+        setErrorMessage(data.message || 'Invalid OTP code. Please ask him.');
         // Clear digits on error for clean retry
         setDigits(['', '', '', '', '', '']);
         inputRefs.current[0]?.focus();
@@ -97,7 +97,7 @@ export const Screen2Otp: React.FC<Screen2OtpProps> = ({ onSuccess, onBack }) => 
       console.error('Network error verifying OTP:', err);
       setErrorMessage('Unable to contact server. Please verify your connection.');
     } finally {
-      setIsLoading(false);
+      setIsLoading(false);  
     }
   };
 
@@ -136,7 +136,7 @@ export const Screen2Otp: React.FC<Screen2OtpProps> = ({ onSuccess, onBack }) => 
             Correct! Please ask for the OTP to unlock.
           </h2>
           <p className="text-emerald-700 text-xs mt-1.5">
-            A single-use 6-digit passcode has been generated to unlock your surprise.
+            A single-use 6-digit passcode has been generated to unlock your surprise. for OTP ask him. 
           </p>
         </div>
 
