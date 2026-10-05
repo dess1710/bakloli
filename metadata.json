@@ -1,0 +1,6 @@
+{
+  "name": "Romantic Birthday Surprise & Secret Gate",
+  "description": "A romantic birthday celebration website protected by a secure 2-step question and OTP verification gate.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
